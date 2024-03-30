@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ec; /* Light beige background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the container vertically */
+    padding: 20px;
+    background-color: #fff; /* White container background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .question {
+    display: none;
+  }
+  
+  .question.show {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #484848; /* Dark gray text color */
+    margin-bottom: 20px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffaf8f; /* Peach background color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff8f75; /* Darker peach on hover */
+  }
+  
+  button:last-child {
+    margin-right: 0;
+  }
+  
+  .submit-btn-container {
+    text-align: center; /* Center the button horizontally */
+  }
+  

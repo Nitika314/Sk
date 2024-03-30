@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin Routine Finder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <div class="question" id="question1">
+        <h2>1. Choose your skin type</h2>
+        <input type="radio" name="skinType" value="Sensitive"> Sensitive<br>
+        <input type="radio" name="skinType" value="Normal"> Normal<br>
+        <input type="radio" name="skinType" value="Dry"> Dry<br>
+        <input type="radio" name="skinType" value="Combination"> Combination<br>
+        <input type="radio" name="skinType" value="Oily"> Oily<br>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+      
+      <div class="question" id="question2">
+        <h2>2. What is Your age?</h2>
+        <input type="radio" name="age" value="12-18"> 12-18<br>
+        <input type="radio" name="age" value="19-25"> 19-25<br>
+        <input type="radio" name="age" value="26-35"> 26-35<br>
+        <input type="radio" name="age" value="46-55"> 46-55<br>
+        <input type="radio" name="age" value="55+"> 55+<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question3">
+        <h2>3. What is your gender?</h2>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Others"> Others (optional)<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question4">
+        <h2>4. What is Your skin concern?</h2>
+        <input type="checkbox" name="skinConcern" value="Acne"> Acne<br>
+        <input type="checkbox" name="skinConcern" value="Aging"> Aging<br>
+        <input type="checkbox" name="skinConcern" value="Dryness"> Dryness<br>
+        <input type="checkbox" name="skinConcern" value="Oiliness"> Oiliness<br>
+        <input type="checkbox" name="skinConcern" value="Sensitivity"> Sensitivity<br>
+        <input type="checkbox" name="skinConcern" value="UnevenSkinTone"> Uneven skin tone<br>
+        <input type="checkbox" name="skinConcern" value="Pigmentation"> Pigmentation<br>
+        <input type="checkbox" name="skinConcern" value="EnlargedPores"> Enlarged pores<br>
+        <input type="checkbox" name="skinConcern" value="Tanned"> Tanned<br>
+        <input type="checkbox" name="skinConcern" value="Maintenance"> None, Just Maintenance<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question5">
+        <h2>5. How would you describe your skin?</h2>
+        <input type="radio" name="skinDescription" value="Rough"> Rough<br>
+        <input type="radio" name="skinDescription" value="Smooth"> Smooth<br>
+        <input type="radio" name="skinDescription" value="Bumpy"> Bumpy<br>
+        <input type="radio" name="skinDescription" value="Uneven"> Uneven<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question6">
+        <h2>6. Which area of your face do you experience most issues?</h2>
+        <input type="radio" name="faceArea" value="Forehead"> Forehead<br>
+    <input type="radio" name="faceArea" value="Nose"> Nose<br>
+    <input type="radio" name="faceArea" value="Cheek"> Cheek<br>
+    <input type="radio" name="faceArea" value="Chin"> Chin<br>
+    <input type="radio" name="faceArea" value="TZone"> T-Zone (Face & Head, Nose, Chin)<br>
+    <input type="radio" name="faceArea" value="EntireFace"> Entire Face<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question7">
+        <h2>7. Your current skincare routine looks like:</h2>
+        <input type="checkbox" name="skincareRoutine" value="Cleanser"> Cleanser<br>
+        <input type="checkbox" name="skincareRoutine" value="Moisturizer"> Moisturizer<br>
+        <input type="checkbox" name="skincareRoutine" value="Toner"> Toner<br>
+        <input type="checkbox" name="skincareRoutine" value="Serum"> Serum<br>
+        <input type="checkbox" name="skincareRoutine" value="Sunscreen"> Sunscreen<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question8">
+        <h2>8. How much time are you willing to dedicate to skincare each day?</h2>
+        <input type="radio" name="skincareTime" value="LessThan5"> Less than 5 minutes<br>
+        <input type="radio" name="skincareTime" value="5-10"> 5-10 minutes<br>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    
+      <div class="question" id="question9">
+        <h2>9. Do you have any specific skincare goals?</h2>
+        <input type="checkbox" name="skincareGoals" value="Hydration"> Hydration<br>
+        <input type="checkbox" name="skincareGoals" value="Brightening"> Brightening<br>
+        <input type="checkbox" name="skincareGoals" value="FineLines"> Reducing fine lines and wrinkles<br>
+        <input type="checkbox" name="skincareGoals" value="Pores"> Minimizing pores<br>
+        <input type="checkbox" name="skincareGoals" value="Soothing"> Soothing skin irritations<br>
+        <input type="checkbox" name="skincareGoals" value="AcnePrevention"> Preventing acne breakouts<br>
+        <input type="checkbox" name="skincareGoals" value="Healthy"> None, just want healthy skin<br>
+        
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="submitForm()" id="submitBtn" style="display:none;">Submit</button>
+
+      </div>
+    
+    </div>
+
+<script>
+let currentQuestion = 1;
+const totalQuestions = 9;
+
+function showQuestion(questionNumber) {
+  const questions = document.querySelectorAll('.question');
+  questions.forEach(question => {
+    question.style.display = 'none';
+  });
+  const currentQuestionElement = document.getElementById(`question${questionNumber}`);
+  currentQuestionElement.style.display = 'block';
+}
+
+function nextQuestion() {
+  if (currentQuestion < totalQuestions) {
+    currentQuestion++;
+    showQuestion(currentQuestion);
+    if (currentQuestion === totalQuestions) {
+      document.getElementById('submitBtn').style.display = 'block';
+    }
+  }
+}
+
+function previousQuestion() {
+  if (currentQuestion > 1) {
+    currentQuestion--;
+    showQuestion(currentQuestion);
+    document.getElementById('submitBtn').style.display = 'none';
+  }
+}
+
+function submitForm() {
+  // Placeholder for form submission
+  alert('Form submitted successfully!');
+}
+
+// Show the first question initially
+showQuestion(1);
+
+</script>
+
+</body>
+</html>
